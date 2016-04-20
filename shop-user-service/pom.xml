@@ -8,14 +8,14 @@
 		<artifactId>shop-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>shop-customer-service</artifactId>
+	<artifactId>shop-user-service</artifactId>
 
-	<name>Shop Customer Service</name>
+	<name>Shop User Service</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>shop-customer-persistence</artifactId>
+			<artifactId>shop-user-persistence</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>

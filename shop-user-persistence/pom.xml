@@ -8,9 +8,9 @@
 		<artifactId>shop-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>shop-customer-persistence</artifactId>
+	<artifactId>shop-user-persistence</artifactId>
 	
-	<name>Shop Customer Persistence</name>
+	<name>Shop User Persistence</name>
 	
 	<dependencies>
 		<dependency>

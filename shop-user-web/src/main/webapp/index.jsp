@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello Customer!</h2>
+<h2>Hello User!</h2>
 </body>
 </html>

@@ -10,9 +10,9 @@
 
 	<modules>
 		<module>shop-web</module>
-		<module>shop-customer-persistence</module>
-		<module>shop-customer-service</module>
-		<module>shop-customer-web</module>
+		<module>shop-user-persistence</module>
+		<module>shop-user-service</module>
+		<module>shop-user-web</module>
 		<module>shop-product-persistence</module>
 		<module>shop-product-service</module>
 		<module>shop-product-web</module>
@@ -71,7 +71,7 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<configuration>
-						<encoding>UTF-8</encoding>
+						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
 				</plugin>
 			</plugins>
