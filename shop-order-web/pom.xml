@@ -8,15 +8,15 @@
 		<artifactId>shop-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>shop-user-web</artifactId>
+	<artifactId>shop-order-web</artifactId>
 	<packaging>war</packaging>
 
-	<name>Shop User Web</name>
+	<name>shop Order Web</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>shop-user-service</artifactId>
+			<artifactId>shop-order-service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
@@ -32,11 +32,11 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
-		<finalName>shop-user-web</finalName>
+		<finalName>shop-order-web</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
@@ -44,7 +44,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webAppConfig>
-						<contextPath>/user</contextPath>
+						<contextPath>/order</contextPath>
 					</webAppConfig>
 				</configuration>
 			</plugin>

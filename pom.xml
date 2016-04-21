@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -9,17 +10,25 @@
 	<name>Shop Parent</name>
 
 	<modules>
+		<module>shop-domain</module>
 		<module>shop-web</module>
+		<module>shop-user-domain</module>
 		<module>shop-user-persistence</module>
 		<module>shop-user-service</module>
 		<module>shop-user-web</module>
+		<module>shop-product-domain</module>
 		<module>shop-product-persistence</module>
 		<module>shop-product-service</module>
 		<module>shop-product-web</module>
+		<module>shop-order-domain</module>
+		<module>shop-order-persistence</module>
+		<module>shop-order-service</module>
+		<module>shop-order-web</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<commons-lang3.version>3.4</commons-lang3.version>
 		<servlet.version>3.1.0</servlet.version>
 		<jsp.version>2.0</jsp.version>
 		<junit.version>4.11</junit.version>
@@ -27,6 +36,13 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Apache Commons -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
+		
 			<!-- Servlet和JSP -->
 			<dependency>
 				<groupId>javax.servlet</groupId>
